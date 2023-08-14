@@ -1,0 +1,635 @@
+@import url(./fonts.css);
+*{
+    margin: 0;
+    padding: 0;
+} 
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.align-items{
+    align-items: center;
+}
+.text-align{
+    text-align: center;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.header{
+    background: #313131;
+}
+.header_block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.header_language_text{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "notosans";
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+}
+.header_language:hover .header_language_box{
+    display: block;
+}
+.header_language_box{
+    background: #fff;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid rgb(233, 233, 233); 
+    position: absolute;
+    top: 70px;
+    right: 390px;
+    display: none;
+}
+.header_language_scroll{
+    color: #313131;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "notosans";
+}
+.header_language_scroll_forborder{
+    border-top: 1px solid #C4C4C4;
+}
+.header_call{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+    font-family: "notosans";
+    margin-left: 80px;
+}
+.header_contact{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+    font-family: "notosans";
+    margin-left: 40px;
+}
+.header_pay{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+    font-family: "notosans";
+    margin-left: 41px;
+}
+.header_block_img{
+    margin-right: 7px;
+}
+.main{
+    background: #fff;
+    margin-top: 18px;
+}
+.main_search{
+    display: flex;
+    align-items: center;
+}
+.main_searching_title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #313131;
+    line-height: 20px;
+    font-family: "notosans";
+}
+.main_search_textarea{
+    width: 440px;
+    height: 50px;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "notosans";
+    line-height: 19px;
+    margin-left: 143px;
+}
+.main_search_button{
+    background: #313131;
+    width: 190px;
+    height: 50px;
+    border: 1px solid #313131;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    font-family: "notosans";
+}
+.main_search_button img{
+    margin-right: 5px;
+}
+.main_link_menu{
+    display: flex;
+    width: 1180px;
+    margin-top: 28px;
+    justify-content: flex-end;
+}
+.main_links{
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 70px;
+    font-family: "notosans";
+    margin-right: 40px;
+}
+.main_link_dropmenu{
+    width: 300px;
+    height: 210px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid rgb(209, 209, 209);
+    justify-content: space-between;
+    position: absolute;
+    border-top: 3px solid #313131;
+    left: 460px;
+    display: flex;
+    display: none;
+}
+.main_link_dropmenu_hover:hover .main_link_dropmenu{
+    display: block;
+    display: flex;
+}   
+.main_link_dropmenu_title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #313131;
+    font-family: "notosans";
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+.main_link_dropmenu_title:hover{
+    border-bottom: 1px solid #313131;
+    color: #5f5f5f;
+}
+.main_link_dropmenu_links{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    font-family: "notosans";
+    color: #313131; 
+    transition: 0.3s;
+}
+.main_link_dropmenu_links:hover{
+    color: #5f5f5f;
+}
+.main_big_title{
+    font-size: 48px;
+    font-weight: 600;
+    color: #313131;
+    line-height: 70px;
+    font-family: "notosans";
+    position: absolute;
+    width: 570px;
+    top: 353px;
+    right: 400px;
+    text-align: center;
+}
+.main_shopnow_button{
+    position: absolute;
+    top: 624px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: "notosans";
+    color: #fff;
+    background: #313131;
+    padding: 12px 46px;
+    border: 0px #fff;
+}
+.main_fullstop_link{
+    position: absolute;
+    display: flex;
+    top: 800px;
+    right: 900px;
+}
+.main_fullstop_links{
+    margin-right: 23px;
+}
+.main_souviners{
+    margin-top: 106px;
+}
+.suunto_watch{
+    background: #f5f5f5;
+    width: 630px;
+    height: 500px;
+    position: relative;
+    margin-right: 30px;
+}
+.suunto_watch_skidka{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "notosans";
+    color: #fff;
+    border-radius: 365px;
+    background: #313131;
+    position: absolute;
+    padding: 15px 10px 15px 11px;
+    margin: 35px 0px 0px 31px;
+}
+.suunto_title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 70px;
+    font-family: "notosans";
+    color: #313131;
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+}
+.suunto_text{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "notosans";
+    color: #313131;
+    position: absolute;
+    left: 20px;
+    bottom: 1px;
+}
+.airpods_menu{
+    position: relative;
+}
+.airpods_skidka{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "notosans";
+    color: #fff;
+    border-radius: 365px;
+    background: #313131;
+    padding: 15px 10px 15px 11px;
+    left: 20px;
+    top: 35px;
+}
+.airpods_title{
+    font-family: "notosans" ;
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
+}
+.airpods_text{
+    font-family: "notosans";
+    font-size: 24px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+.powerbank_menu{
+    background: #f5f5f5;
+    position: relative;
+    padding: 15px 0px 15px 20px;
+    margin-right: 30px;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+}
+.powerbank_title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: "notosans";
+    color: #313131;
+    width: 280px;
+}
+.powerbank_text{
+    font-family: "notosans";
+    font-size: 24px;
+    font-weight: 300;
+    color: #313131;
+}
+.powerbank_img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.poweebank_skidka{
+    font-family: "notosans";
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    color: #fff;
+    border-radius: 365px;
+    background: #313131;
+    padding: 15px 10px 15px 11px;
+    top: 165px;
+}
+.remax_menu{
+    background: #f5f5f5;
+    padding: 15px 0px 15px 20px;
+    width: 297px;
+    height: 200px;
+    margin-top: 30px;
+    position: relative;
+}
+.remax_title{
+    font-family: "notosans";
+    font-size: 24px;
+    font-weight: 500;
+    color: #313131;
+}
+.remax_text{
+    font-family: "notosans";
+    font-size: 24px;
+    font-weight: 300;
+    color: #313131;
+}
+.remax_img{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+.remax_skidka{
+    font-family: "notosans";
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    color: #fff;
+    border-radius: 365px;
+    background: #313131;
+    padding: 15px 10px 15px 11px;
+    bottom: 5px;
+}
+.learnmore_menu{
+    display: flex;
+    justify-content: center;
+}
+.learnmore{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "notosans";
+    color: #fff;
+    background: #313131;
+    border: 0px #fff;
+    margin-top: 30px;
+    padding: 12px 28px 13px 28px;
+}
+.cellphone_menu{
+    margin-top: 162px;
+    position: relative;
+}
+.cellphone_title{
+    position: absolute;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "notosans";
+    color: #313131;
+    line-height: 49px;
+    bottom: 400px;
+}
+.cellphone_box{
+    position: relative;
+    width: 300px;
+    height: 330px;
+    margin-right: 30px;
+    border: 1px solid #fff;
+}
+.cellphone_box:hover{
+    border: 1px solid #E5E5E5;
+}
+.cellphone_box:hover .cellphone_button{
+    display: block;
+}
+.cellphone_box:hover .cellphone_like_icon{
+    display: block;
+}
+.cellphone_like_icon{
+    position: absolute;
+    left: 266px;
+    top: 17px;
+    display: none;
+}
+.cellphone_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #313131;
+    font-family: "notosans";
+    position: absolute;
+    left: 26px;
+    top: 226px;
+}
+.cellphone_usd{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "notosans";
+    color: #313131;
+    position: absolute;
+    left: 129px;
+    top: 253px;
+}
+.cellphone_button{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "notosans";
+    color: #fff;
+    background: #313131;
+    border: 0px #fff;
+    padding: 5px 36px;
+    position: absolute;
+    top: 282px;
+    right: 100px;
+    display: none;
+}
+.computers_menu{
+    position: relative;
+    margin-top: 150px;
+}
+.computers_title{
+    position: absolute;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "notosans";
+    color: #313131;
+    line-height: 49px;
+    bottom: 400px;
+}
+.computers_box{
+    position: relative;
+    width: 300px;
+    height: 330px;
+    margin-right: 30px;
+    border: 1px solid #fff;
+}
+.computers_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #313131;
+    font-family: "notosans";
+    position: absolute;
+    left: 26px;
+    top: 226px;
+}
+.computers_usd{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "notosans";
+    color: #313131;
+    position: absolute;
+    left: 129px;
+    top: 253px;
+}
+.playstation_menu{
+    margin-top: 177px;
+    position: relative;
+    width: 1290px;
+    align-items: center;
+}
+.playstation_title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+    font-family: "notosans";
+    color: #313131;
+    position: absolute;
+}
+.playstation_button{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "notosans";
+    line-height: 24px;
+    color: #fff;
+    background: #313131;
+    border: 0px #fff;
+    padding: 13px 40px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+.playstation_img{
+    position: absolute;
+    margin-top: 200px;
+}
+.top_seller{
+    position: relative;
+    margin-top: 500px;
+}
+.top_seller_title{
+    position: absolute;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "notosans";
+    color: #313131;
+    line-height: 49px;
+    bottom: 400px;
+}
+.topseller_box{
+    position: relative;
+    width: 300px;
+    height: 330px;
+    margin-right: 30px;
+    border: 1px solid #fff;
+}
+.topseller_text{
+    font-size: 16px;
+    font-weight: 500;
+    color: #313131;
+    font-family: "notosans";
+    position: absolute;
+    left: 26px;
+    top: 226px;
+}
+.problem_text{
+    left: 110px;
+}
+.topseller_usd{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "notosans";
+    color: #313131;
+    position: absolute;
+    left: 129px;
+    top: 253px;
+}
+.footer{
+    background: #313131;
+    margin-top: 83px;
+    padding-bottom: 30px;
+}
+.footer_menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer_vector_menu{
+    display: flex;
+    position: relative;
+}
+.vector_title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    font-family: "notosans";
+    margin-top: 52px;
+}
+.vector_icon{
+    margin: 30px 3px    ;
+}
+.footer_button_title{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'notosans';
+    color: #fff;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.footer_textarea{
+    width: 330px;
+    height: 50px;
+    resize: none;
+    outline: none;
+}
+.footer_button{
+    width: 190px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "notosans";
+    color: #fff;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+.footer_link{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'notosans';
+    color: #fff;
+    line-height: 25px;
+    margin-left: 30px;
+}
+.footer_icons_menu{
+    display: flex;
+}
+.footer_icons{
+    margin-right: 24px;
+    margin-top: 65px;
+}
+
+
+
+
+
+
+
